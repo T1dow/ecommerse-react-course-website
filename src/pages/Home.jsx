@@ -12,8 +12,8 @@ const Home = ()=>{
             <div className="home-hero">
                 <h1 className="home-title">Welcome to shopHub</h1>
                 <p className="home-subtitle">
-                    Descover amzing products at great prices.
-                </p>
+-                   
++                    Discover amazing products at great prices.                </p>
             </div>
             <div className="container">
                 <h2 className="page-title">Our Products</h2>
