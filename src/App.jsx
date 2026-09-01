@@ -4,12 +4,16 @@ import Auth from "./pages/Auth.jsx"
 import Checkout from "./pages/checkout.jsx"
 import "./App.css"
 import Navbar from "./components/navbar.jsx"
+import AuthProvider from "./context/Authcontext.jsx"
 
 
 
 
 const App = () => {
-  return <div className="app">
+  
+  return (
+  <AuthProvider>
+  <div className="app">
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>}/>
@@ -21,6 +25,8 @@ const App = () => {
     </Routes>
 
   </div>
+  </AuthProvider>
+  )
 }
 
 export default App;
